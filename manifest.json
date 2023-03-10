@@ -1,0 +1,18 @@
+{
+    "name": "Jellyfin Launcher",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A launcher for Jellyfin",
+    "icons": {
+        "48": "icons/icon-16.png",
+        "96": "icons/icon-32.png"
+        
+      },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "tabs"
+    ]
+  }
+  
