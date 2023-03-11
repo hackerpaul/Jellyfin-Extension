@@ -3,7 +3,7 @@ const urlInput = document.getElementById('urlInput');
 const savedUrlDisplay = document.getElementById('savedUrl');
 const saveButton = document.getElementById('saveButton');
 const launchButton = document.getElementById('launchButton');
-const changeUrlButton = document.getElementById('changeUrlButton');
+
 
 // Retrieve saved URL from storage
 chrome.storage.sync.get('jellyfinUrl', function(data) {
@@ -43,4 +43,12 @@ function changeUrl() {
 // Add event listeners
 saveButton.addEventListener('click', saveUrl);
 launchButton.addEventListener('click', launchJellyfin);
-changeUrlButton.addEventListener('click', changeUrl);
+
+
+// Check if Enter key is pressed and save URL
+urlInput.addEventListener('keyup', (event) => {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    saveUrl();
+  }
+});
