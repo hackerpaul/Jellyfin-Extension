@@ -1,46 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Jellyfin Launcher</title>
-  <style>
-    body {
-      width: 300px;
-      height: 150px;
-      padding: 10px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      text-align: center;
-    }
-    .banner {
-        width: 70%;
-        margin-top: 0%;
-        margin-bottom: 5%;
-    }
-    h1 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 0;
-    }
-    .button-launch {
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 5%;
-      font-size: 16px;
-      border-radius: 5px;
-      border: none;
-      background-color: #008cff;
-      color: white;
-      cursor: pointer;
-    }
-    .button-launch:hover {
-      background-color: #0d4070;
-    }
-  </style>
-</head>
-<body>
-<img class="banner" src="icons/banner-dark.png"/>
-  <h1>Launch Jellyfin</h1>
-  <button class="button-launch" id="launch-jellyfin">Launch</button>
-  <script src="popup.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jellyfin Launcher</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jellyfin Launcher</h1>
+      <p>Enter the URL for your Jellyfin server:</p>
+      <input type="text" id="urlInput" placeholder="https://your-server-url.com">
+      <button id="saveButton">Save</button>
+      <p id="savedUrl"></p>
+      <button id="launchButton">Launch Jellyfin</button>
+      <button id="changeUrlButton">Change URL</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>

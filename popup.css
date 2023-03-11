@@ -1,0 +1,116 @@
+/* Reset default margin and padding */
+* {
+    margin: 10px;
+    padding: 0;
+  }
+  
+  /* Center container vertically and horizontally */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    background-color: #F2F2F2;
+  }
+  
+  /* Style the h1 header */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style the paragraph text */
+  p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Style the URL input box */
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px, 1px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333333;
+    background-color: #F9F9F9;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style the save button */
+  #saveButton {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #0077CC;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change save button color on hover */
+  #saveButton:hover {
+    background-color: #0066B2;
+  }
+  
+  /* Style the saved URL text */
+  #savedUrl {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style the launch button */
+  #launchButton {
+    display: none; /* Hide launch button by default */
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #0077CC;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change launch button color on hover */
+  #launchButton:hover {
+    background-color: #0066B2;
+  }
+  
+  /* Style the change URL button */
+  #changeUrlButton {
+    display: none; /* Hide change URL button by default */
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #0077CC;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change change URL button color on hover */
+  #changeUrlButton:hover {
+    background-color: #0066B2;
+  }
+  
